@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rent a car | SunbeamCars Inc.</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+<!-- header section starts  -->
+
+<header class="header">
+
+    <a href="index.html" class="logo"> <i class="fas fa-car"></i> SunbeamCars Inc. </a>
+
+    <nav class="navbar">
+        <a href="index.html">home</a>
+        <a href="#features">features</a>
+        <a href="#products">vehicles</a>
+        <a href="#categories">categories</a>
+        <a href="#review">review</a>
+        <a href="aboutus.html">About Us</a>
+    </nav>
+
+    <div class="icons">
+        <div class="fas fa-bars" id="menu-btn"></div>
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-car" id="cart-btn"></div>
+        <div class="fas fa-user" id="login-btn"></div>
+    </div>
+
+    <form  class="search-form">
+        <input type="search" id="search-box" placeholder="search here...">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+
+
+    
+
+</header>
+
+<!-- header section ends -->
+<section class="accessories">
+
+  <div class="booking-pages-img">
+    <a href="accessories.html" class="acc-header flip-in-hor-bottom">Select Accessories</a>
+  </div>
+  
+    <div class="box-container2">
+
+        <div class="box2 box3" id="output">
+            
+        </div>
+
+        <div class="box2 box4">
+            <form id="form">
+                <fieldset>
+                    <legend class="form-header">Select accessories (excl. VAT)</legend>
+                    <br>
+                    
+                    <input type="checkbox" data-item="Second driver" class="slist" value="199" onchange="calculateTotal(this, this.value)">Second driver dkr. 199,00<br>
+                    <input type="checkbox" data-item="Child seat1" class="slist" value="155" onchange="calculateTotal(this, this.value)">Child seat (5-12 year) dkr. 155,00<br>
+                    <input type="checkbox" data-item="Roadside Aid" class="slist" value="120" onchange="calculateTotal(this, this.value)">Roadside Aid dkr. 120,00<br>
+                    <input type="checkbox" data-item="Baby seat" class="slist" value="100" onchange="calculateTotal(this, this.value)">Baby seat (0-1 year), dkr. 100,00<br>
+                    <input type="checkbox" data-item="Child seat2" class="slist" value="140" onchange="calculateTotal(this, this.value)">Child seat (1-4 year), dkr. 140,00<br>
+                    <input type="checkbox" data-item="GPS navigation" class="slist" value="250" onchange="calculateTotal(this, this.value)">GPS navigation dkr. 250,00<br>
+                    <input type="checkbox" data-item="Snow chains" class="slist" value="188" onchange="calculateTotal(this, this.value)">Snow chains dkr. 188,00<br>
+                    <br>
+                    <br>
+                    <button class="book-button" type="submit">Continue</button>
+                </fieldset>
+            </form>
+        </div>
+
+        <div class="box2 box5" id="totaloutput">
+            </div>
+        </div>
+
+    </div>
+
+</section>
+ <!--footer section starts here..-->
+
+ <section class="footer">
+    <div class="box-container">
+        <div class="box">
+            <h3>SunbeamCars Inc. <i class="fas fa-car"></i></h3>
+            <p>Lorem ipsum dolor sit, amet consectur adipisicin elit
+                Unde sunt fugiat dolore ipsum id est maxime ad tempore quasi tenetur
+            </p>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3>Contact info</h3>
+            <a href="#" class="links"> <i class="fas fa-phone">+45 000 000 000</i></a>
+            <a href="#" class="links"> <i class="fas fa-envelope">e&l@baaa.com</i></a>
+            <a href="#" class="links"> <i class="fas fa-map-marker-alt">Emma & Liam</i></a>
+        </div>
+
+        <div class="box">
+            <h3>Quick Links</h3>
+            <a href="index.html" class="links"> <i class="fas fa-arrow-right">Home</i></a>
+            <a href="#" class="links"> <i class="fas fa-arrow-right">features</i></a>
+            <a href="#" class="links"> <i class="fas fa-arrow-right">vehicles</i></a>
+            <a href="#" class="links"> <i class="fas fa-arrow-right">categories</i></a>
+            <a href="#" class="links"> <i class="fas fa-arrow-right">review</i></a>
+            <a href="aboutus.html" class="links"> <i class="fas fa-arrow-right">About Us</i></a>
+        </div>
+
+        <div class="box">
+            <h3>Newsletter</h3>
+           <p>Subscribe for the latest updates</p>
+           <input type="email" class="email" placeholder="your email">
+           <input type="submit" class="btn" value="Subscribe">
+           
+        </div>
+
+    </div>
+    
+</section>
+<!--footer section ends here..-->
+    <script src="js/accessories.js"></script>
+
+</body>
+</html>
